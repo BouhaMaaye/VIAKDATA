@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>IAKDATA - De la donnée aux décisions, avec méthode</title>
+    <!--icons code -->
+    <script src="https://kit.fontawesome.com/a9decbbec9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="new-header">
+        <div class="header-container">
+            <a href="#" class="header-logo">
+                <div class="logo-content">
+                    <h1>IAKDATA</h1>
+                    <p>De la donnée aux décisions, avec méthode</p>
+                </div>
+            </a>
+            <nav class="header-nav">
+                <ul class="header-menu">
+                    <li><a href="#home" data-key="home">Accueil</a></li>
+                    <li><a href="#about" data-key="about">À propos</a></li>
+                    <li><a href="#services" data-key="services">Nos Offres</a></li>
+                    <li><a href="#contact" data-key="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="language-selector">
+                    <button id="lang-btn">FR</button>
+                    <div id="lang-menu" class="lang-menu">
+                        <button onclick="setLanguage('fr')" id="lang-fr">FR</button>
+                        <button onclick="setLanguage('en')" id="lang-en">EN</button>
+                    </div>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="home">
+        <div id="particles-js"></div>
+        <div class="home__content">
+            <h1 class="title" data-key="welcome_title">
+                Transformez vos Données<br>
+                en Avantage Concurrentiel<br><br>
+            </h1>
+            <p data-key="welcome_message">
+                Avec notre expertise en IA et Data Science, nous propulsons votre entreprise vers l'excellence.<br><br>
+                Accompagnement des PME industrielles françaises dans leur transformation digitale.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section de présentation de l'entreprise -->
+    <section id="about-us" class="about-us">
+        <div class="container">
+            <div class="about-us__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d178057.455944993!2d6.129205115234375!3d46.20042159999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b8b91e2e27e6d%3A0x1180a57c1ed54765!2sHaute-Savoie%2C%20France!5e0!3m2!1sfr!2s!4v1622474771181!5m2!1sfr!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="about-us__content">
+                <h2 data-key="about_us">À propos d'IAKDATA</h2>
+                <p data-key="about_us_description">
+                    IAKDATA est votre partenaire de confiance pour la transformation digitale de votre PME industrielle. 
+                    Située en Haute-Savoie, France, notre entreprise se spécialise dans l'Intelligence Artificielle, 
+                    l'analyse de données et l'optimisation des processus industriels. Nous transformons vos données 
+                    en insights actionnables pour générer une rentabilité rapide et durable, économisant des milliers 
+                    d'heures de travail et optimisant votre performance opérationnelle.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2 class="title animated-title" data-key="services_title">Nos Offres</h2>
+        <div class="services-container">
+            <div class="service-item">
+                <img src="assets/data-first.jpg" alt="Data First">
+                <h3 data-key="service1_title">Data First</h3>
+                <p data-key="service1_description">
+                    Audit complet de vos données, architecture solide et tableaux de bord pour une vision claire de votre activité.
+                </p>
+            </div>
+            <div class="service-item">
+                <img src="assets/ia-ready.jpg" alt="IA Ready">
+                <h3 data-key="service2_title">IA Ready</h3>
+                <p data-key="service2_description">
+                    Préparation de votre entreprise à l'IA avec identification des cas d'usage et mise en place des prérequis techniques.
+                </p>
+            </div>
+            <div class="service-item">
+                <img src="assets/ia-clarity.jpg" alt="IA Clarity">
+                <h3 data-key="service3_title">IA Clarity</h3>
+                <p data-key="service3_description">
+                    Déploiement de solutions IA sur mesure pour optimiser vos processus et améliorer la qualité de vos productions.
+                </p>
+            </div>
+            <div class="service-item">
+                <img src="assets/predictive.jpg" alt="Analyse Prédictive">
+                <h3 data-key="service4_title">Analyse Prédictive</h3>
+                <p data-key="service4_description">
+                    Anticipez les tendances et optimisez votre maintenance grâce à nos modèles prédictifs avancés.
+                </p>
+            </div>
+            <div class="service-item">
+                <img src="assets/automation.jpg" alt="Automatisation">
+                <h3 data-key="service5_title">Automatisation</h3>
+                <p data-key="service5_description">
+                    Automatisez vos processus répétitifs et libérez du temps pour la valeur ajoutée de votre métier.
+                </p>
+            </div>
+            <div class="service-item">
+                <img src="assets/formation.jpg" alt="Formation">
+                <h3 data-key="service6_title">Formation & Support</h3>
+                <p data-key="service6_description">
+                    Accompagnement de vos équipes pour une adoption réussie et une montée en compétences durable.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-modern">
+        <h2 class="section-title" data-key="client_testimonials">Ce Que Nos Clients Disent</h2>
+        <div class="testimonials-slider">
+            <div class="testimonial-slide">
+                <div class="testimonial-image">
+                    <img src="assets/client1.png" alt="Logo Client 1">
+                </div>
+                <div class="testimonial-text-content" data-key="testimonial1_text">
+                    <p>"IAKDATA a révolutionné notre approche data et nous a fait gagner 40% d'efficacité."</p>
+                    <span data-key="testimonial1_author">— Directeur Technique, IndustrieTech</span>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-image">
+                    <img src="assets/client2.png" alt="Logo Client 2">
+                </div>
+                <div class="testimonial-text-content">
+                    <p data-key="testimonial2_text">"Une expertise IA remarquable adaptée à nos besoins industriels."</p>
+                    <span data-key="testimonial2_author">— CEO, Manufacturing Solutions</span>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-image">
+                    <img src="assets/client3.png" alt="Logo Client 3">
+                </div>
+                <div class="testimonial-text-content">
+                    <p data-key="testimonial3_text">"Leur approche méthodique a transformé nos données en gold mine."</p>
+                    <span data-key="testimonial3_author">— Responsable Data, TechnoPlus</span>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-image">
+                    <img src="assets/client4.png" alt="Logo Client 4">
+                </div>
+                <div class="testimonial-text-content">
+                    <p data-key="testimonial4_text">"Un accompagnement de qualité pour notre transformation digitale."</p>
+                    <span data-key="testimonial4_author">— Directeur Innovation, SmartIndustry</span>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-image">
+                    <img src="assets/client5.png" alt="Logo Client 5">
+                </div>
+                <div class="testimonial-text-content">
+                    <p data-key="testimonial5_text">"ROI visible dès les premiers mois de collaboration."</p>
+                    <span data-key="testimonial5_author">— CFO, DataDriven Corp</span>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Section de contact -->
+    <section id="contact">
+        <div class="contact__content">
+            <h2 data-key="contact_title">Démarrons Votre Transformation</h2>
+            <form id="contactForm" action="/send" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name" data-key="contact_name">Nom <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-key="contact_email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone" data-key="contact_phone">Téléphone <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company" data-key="contact_company">Entreprise</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message" data-key="contact_message">Projet <span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" data-key="contact_submit">Lancer mon projet</button>
+            </form>
+            <div id="responseMessage"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-column">
+            <h3 data-key="follow_us">Suivez-nous</h3>
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:contact@iakdata.fr"><i class="fa-brands fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p><a href="mailto:contact@iakdata.fr">contact@iakdata.fr</a></p>
+            <p>Haute-Savoie, France</p>
+            <p><br>Consultation gratuite disponible</p>
+        </div>
+        <div class="footer-column">
+            <h3>Nos Services</h3>
+            <p><a href="#services" data-key="services">Data First</a></p>
+            <p><a href="#services" data-key="services">IA Ready</a></p>
+            <p><a href="#services" data-key="services">IA Clarity</a></p>
+            <p><a href="#services" data-key="services">Formation</a></p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;2025 IAKDATA SAS, <span data-key="all_rights_reserved">tous droits réservés</span></p>
+            <p data-key="site_by">Accompagnement des PME industrielles françaises</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            var nav = document.querySelector('.header-nav');
+            nav.classList.toggle('active');
+            this.setAttribute('aria-expanded', nav.classList.contains('active'));
+        });
+        
+        // Fermer le menu automatiquement lorsqu'un lien est cliqué
+        document.querySelectorAll('.header-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                var nav = document.querySelector('.header-nav');
+                nav.classList.remove('active');
+                document.getElementById('hamburger').setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
+    
+    <script>
+        window.onload = function() {
+            const defaultLang = 'fr';
+            setLanguage(defaultLang);
+        };
+
+        function setLanguage(lang) {
+            fetch(`lang/${lang}.json`)
+                .then(response => response.json())
+                .then(data => {
+                    document.querySelectorAll('[data-key]').forEach(element => {
+                        const key = element.getAttribute('data-key');
+                        element.innerHTML = data[key];
+                    });
+
+                    document.documentElement.setAttribute('lang', lang);
+                    document.getElementById('lang-btn').innerText = lang.toUpperCase();
+
+                    // Afficher uniquement les langues non sélectionnées
+                    document.getElementById('lang-fr').style.display = lang === 'fr' ? 'none' : 'block';
+                    document.getElementById('lang-en').style.display = lang === 'en' ? 'none' : 'block';
+
+                    if (lang === 'ar') {
+                        document.body.style.direction = 'rtl';
+                        document.body.style.textAlign = 'right';
+                    } else {
+                        document.body.style.direction = 'ltr';
+                        document.body.style.textAlign = 'left';
+                    }
+                });
+        }
+
+        document.getElementById('lang-btn').addEventListener('click', function() {
+            document.getElementById('lang-menu').classList.toggle('show');
+        });
+        
+        window.addEventListener('scroll', function() {
+            var aboutSection = document.querySelector('.about-us');
+            var sectionPosition = aboutSection.getBoundingClientRect().top;
+            var screenPosition = window.innerHeight / 1.3;
+
+            if (sectionPosition < screenPosition) {
+                aboutSection.classList.add('in-view');
+            }
+        });
+        
+        document.querySelectorAll('.open-modal').forEach(function (element) {
+            element.addEventListener('click', function () {
+                var testimonialId = this.getAttribute('data-testimonial');
+                var modal = document.getElementById('modal-' + testimonialId);
+                modal.style.display = 'block';
+            });
+        });
+
+        // Fermer la modale
+        document.querySelectorAll('.close').forEach(function (element) {
+            element.addEventListener('click', function () {
+                var modal = this.closest('.modal');
+                modal.style.display = 'none';
+            });
+        });
+
+        // Fermer la modale en cliquant en dehors du contenu
+        window.onclick = function (event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        };
+        
+        // Écouter l'événement de soumission du formulaire
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const submitButton = document.querySelector('button[type="submit"]');
+            submitButton.classList.add('loading');
+            submitButton.disabled = true;
+
+            const formData = new FormData(this);
+            const formObject = {};
+            formData.forEach((value, key) => {
+                formObject[key] = value;
+            });
+
+            // Envoyer les données en utilisant fetch
+            fetch('/send', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formObject)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erreur lors de l\'envoi du formulaire');
+                }
+                return response.text();
+            })
+            .then(data => {
+                alert('Message envoyé avec succès !');
+                window.location.reload();
+            })
+            .catch(error => {
+                console.error('Erreur:', error);
+                alert('Une erreur est survenue lors de l\'envoi. Veuillez réessayer.');
+            })
+            .finally(() => {
+                submitButton.classList.remove('loading');
+                submitButton.disabled = false;
+            });
+        });
+    </script>
+</body>
+</html>

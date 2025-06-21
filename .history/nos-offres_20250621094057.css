@@ -1,0 +1,678 @@
+/* ========================================
+   CSS SPÉCIFIQUE - PAGE NOS OFFRES
+   ======================================== */
+
+/* Hero Section Nos Offres */
+.offers-hero {
+    padding: 120px 0 60px;
+    background: linear-gradient(135deg, #08254A 0%, #1E4263 50%, #5599C8 100%);
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.offers-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots-offers" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="15" cy="15" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots-offers)"/></svg>');
+    z-index: 0;
+}
+
+.offers-hero .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Section Introduction */
+.offers-intro {
+    padding: 80px 0;
+    background-color: #F9FAFB;
+    text-align: center;
+}
+
+.offers-intro .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.offers-intro h2 {
+    font-size: 2.5rem;
+    color: #08254A;
+    margin-bottom: 40px;
+    font-weight: 700;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.intro-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intro-content p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+/* Section Offres Principales */
+.main-offers {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.main-offers .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* Carte d'offre */
+.offer-card {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 100px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+    padding: 40px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(8, 37, 74, 0.08);
+}
+
+.offer-card.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.offer-card.reverse {
+    grid-template-columns: 400px 1fr;
+}
+
+.offer-card.reverse .offer-content {
+    order: 2;
+}
+
+.offer-card.reverse .offer-image {
+    order: 1;
+}
+
+/* Badge de niveau */
+.offer-level {
+    margin-bottom: 20px;
+}
+
+.level-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+.level-badge.level-1 {
+    background: linear-gradient(135deg, #5599C8 0%, #1E4263 100%);
+}
+
+.level-badge.level-2 {
+    background: linear-gradient(135deg, #5599C8 0%, #1E4263 100%);
+}
+
+.level-badge.level-3 {
+    background: linear-gradient(135deg, #5599C8 0%, #1E4263 100%);
+}
+
+/* Contenu de l'offre */
+.offer-title {
+    font-size: 2.5rem;
+    color: #08254A;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.offer-subtitle {
+    font-size: 1.3rem;
+    color: #08254A;
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.offer-description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Services de l'offre */
+.offer-services {
+    margin-bottom: 30px;
+}
+
+.offer-services h4 {
+    font-size: 1.3rem;
+    color: #08254A;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+}
+
+.services-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.services-list i {
+    color: #5599C8;
+    font-size: 1.2rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.services-list strong {
+    color: #08254A;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.services-list span {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Détails de l'offre */
+.offer-details {
+    background: linear-gradient(135deg, #F9FAFB 0%, #E5F3FF 100%);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border-left: 4px solid #5599C8;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.detail-item:last-child {
+    margin-bottom: 0;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: #08254A;
+}
+
+.detail-value {
+    color: #5599C8;
+    font-weight: 600;
+}
+
+/* Bouton de l'offre */
+.offer-button {
+    display: inline-block;
+    padding: 16px 32px;
+    background: linear-gradient(135deg, #5599C8 0%, #1E4263 100%);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(85, 153, 200, 0.3);
+}
+
+.offer-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(85, 153, 200, 0.4);
+    background: linear-gradient(135deg, #1E4263 0%, #08254A 100%);
+}
+
+/* Image de l'offre */
+.offer-image {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(8, 37, 74, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-image:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(8, 37, 74, 0.2);
+}
+
+.offer-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.offer-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Section Packs Complémentaires */
+.complementary-packs {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #F9FAFB 0%, #E5F3FF 100%);
+}
+
+.complementary-packs .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #08254A;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.section-description {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 60px;
+    line-height: 1.6;
+}
+
+/* Grille des packs */
+.packs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+/* Carte de pack */
+.pack-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(8, 37, 74, 0.1);
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.pack-card.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pack-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(8, 37, 74, 0.15);
+}
+
+/* Header du pack */
+.pack-header {
+    background: linear-gradient(135deg, #F39736 0%, #e88425 100%);
+    color: #fff;
+    padding: 25px 30px;
+    text-align: center;
+}
+
+.pack-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Contenu du pack */
+.pack-content {
+    padding: 30px;
+}
+
+.pack-description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Fonctionnalités du pack */
+.pack-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.pack-features li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.pack-features i {
+    color: #F39736;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+/* Bouton du pack */
+.pack-button {
+    display: block;
+    width: 100%;
+    padding: 14px 24px;
+    background: linear-gradient(135deg, #F39736 0%, #e88425 100%);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.pack-button:hover {
+    background: linear-gradient(135deg, #e88425 0%, #d67319 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(243, 151, 54, 0.3);
+}
+
+/* Animations spécifiques */
+@keyframes slideInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation échelonnée pour les offres */
+.offer-card:nth-child(1).animate-in { animation-delay: 0.2s; }
+.offer-card:nth-child(2).animate-in { animation-delay: 0.4s; }
+.offer-card:nth-child(3).animate-in { animation-delay: 0.6s; }
+
+/* Animation échelonnée pour les packs */
+.pack-card:nth-child(1).animate-in { animation-delay: 0.1s; }
+.pack-card:nth-child(2).animate-in { animation-delay: 0.3s; }
+.pack-card:nth-child(3).animate-in { animation-delay: 0.5s; }
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 1024px) {
+    .offer-card,
+    .offer-card.reverse {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+        padding: 30px;
+    }
+    
+    .offer-card.reverse .offer-content,
+    .offer-card.reverse .offer-image {
+        order: unset;
+    }
+    
+    .offer-image {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .packs-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .offers-hero {
+        padding: 100px 0 50px;
+    }
+    
+    .offers-intro {
+        padding: 60px 0;
+    }
+    
+    .offers-intro h2 {
+        font-size: 2rem;
+    }
+    
+    .intro-content p {
+        font-size: 1rem;
+    }
+    
+    .main-offers {
+        padding: 60px 0;
+    }
+    
+    .offer-card {
+        margin-bottom: 60px;
+        padding: 25px;
+    }
+    
+    .offer-title {
+        font-size: 2rem;
+    }
+    
+    .offer-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .offer-description {
+        font-size: 1rem;
+    }
+    
+    .offer-services h4 {
+        font-size: 1.2rem;
+    }
+    
+    .services-list li {
+        text-align: left;
+    }
+    
+    .offer-image img {
+        height: 250px;
+    }
+    
+    .complementary-packs {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-description {
+        font-size: 1rem;
+    }
+    
+    .packs-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .pack-content {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .offers-hero {
+        padding: 90px 0 40px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .offers-intro {
+        padding: 50px 0;
+    }
+    
+    .offers-intro h2 {
+        font-size: 1.8rem;
+    }
+    
+    .main-offers {
+        padding: 50px 0;
+    }
+    
+    .offer-card {
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+    
+    .offer-title {
+        font-size: 1.8rem;
+    }
+    
+    .offer-subtitle {
+        font-size: 1rem;
+    }
+    
+    .offer-description {
+        font-size: 0.95rem;
+    }
+    
+    .services-list {
+        padding: 0 10px;
+    }
+    
+    .offer-details {
+        padding: 15px;
+    }
+    
+    .detail-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .offer-button {
+        font-size: 0.9rem;
+        padding: 14px 28px;
+    }
+    
+    .offer-image img {
+        height: 200px;
+    }
+    
+    .complementary-packs {
+        padding: 50px 0;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .pack-header {
+        padding: 20px 25px;
+    }
+    
+    .pack-header h3 {
+        font-size: 1.3rem;
+    }
+    
+    .pack-content {
+        padding: 20px;
+    }
+    
+    .pack-description {
+        font-size: 1rem;
+    }
+    
+    .pack-features li {
+        font-size: 0.95rem;
+    }
+    
+    .pack-button {
+        font-size: 0.9rem;
+        padding: 12px 20px;
+    }
+}
+
+/* ========================================
+   ACCESSIBILITÉ
+   ======================================== */
+
+/* Amélioration de l'accessibilité */
+@media (prefers-reduced-motion: reduce) {
+    .offer-card,
+    .pack-card {
+        transition: none;
+        animation: none;
+    }
+    
+    .offer-card.animate-in,
+    .pack-card.animate-in {
+        opacity: 1;
+        transform: none;
+    }
+    
+    .offer-image:hover,
+    .pack-card:hover {
+        transform: none;
+    }
+}
+
+/* Effet de focus pour l'accessibilité */
+.offer-button:focus,
+.pack-button:focus {
+    outline: 3px solid #F39736;
+    outline-offset: 2px;
+}
+
+/* Amélioration du contraste */
+.level-badge {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Liens internes dans les services */
+.services-list a {
+    color: #5599C8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.services-list a:hover {
+    color: #F39736;
+    text-decoration: underline;
+}

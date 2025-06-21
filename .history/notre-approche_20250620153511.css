@@ -1,0 +1,556 @@
+/* ========================================
+   CSS SPÉCIFIQUE - PAGE NOTRE APPROCHE
+   ======================================== */
+
+/* Hero Section Notre Approche */
+.approach-hero {
+    padding: 120px 0 60px;
+    background: linear-gradient(135deg, #08254A 0%, #1E4263 50%, #5599C8 100%);
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.approach-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots-approach" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="15" cy="15" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots-approach)"/></svg>');
+    z-index: 0;
+}
+
+.approach-hero .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Section Introduction */
+.approach-intro {
+    padding: 80px 0;
+    background-color: #F9FAFB;
+    text-align: center;
+}
+
+.approach-intro .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.approach-intro h2 {
+    font-size: 2.5rem;
+    color: #08254A;
+    margin-bottom: 40px;
+    font-weight: 700;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.intro-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intro-content p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+/* Section Méthodologie */
+.methodology {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.methodology .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.methodology .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #08254A;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+/* Étape de méthodologie */
+.methodology-step {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 80px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.methodology-step.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.methodology-step.reverse {
+    grid-template-columns: 400px 1fr;
+}
+
+.methodology-step.reverse .step-content {
+    order: 2;
+}
+
+.methodology-step.reverse .step-image {
+    order: 1;
+}
+
+/* Contenu de l'étape */
+.step-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #5599C8 0%, #1E4263 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    box-shadow: 0 8px 20px rgba(85, 153, 200, 0.3);
+}
+
+.step-info h3 {
+    font-size: 2rem;
+    color: #08254A;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.step-description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Détails de l'étape */
+.step-details {
+    list-style: none;
+    padding: 0;
+}
+
+.step-details li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.step-details i {
+    color: #5599C8;
+    font-size: 1.2rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.step-details strong {
+    color: #08254A;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.step-details span {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Image de l'étape */
+.step-image {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(8, 37, 74, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-image:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(8, 37, 74, 0.2);
+}
+
+.step-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.step-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Section Principes */
+.principles {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #F9FAFB 0%, #E5F3FF 100%);
+}
+
+.principles .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.principles .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #08254A;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+/* Carte de principe */
+.principle-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(8, 37, 74, 0.1);
+    transition: all 0.3s ease;
+    border-top: 4px solid #F39736;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.principle-card.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.principle-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(8, 37, 74, 0.15);
+}
+
+.principle-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #5599C8 0%, #1E4263 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    color: #fff;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.principle-card:hover .principle-icon {
+    transform: scale(1.1);
+}
+
+.principle-card h3 {
+    font-size: 1.5rem;
+    color: #08254A;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.principle-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Animations spécifiques */
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation au scroll pour les étapes */
+.methodology-step:nth-child(odd).animate-in {
+    animation: slideInFromLeft 0.8s ease-out;
+}
+
+.methodology-step:nth-child(even).animate-in {
+    animation: slideInFromRight 0.8s ease-out;
+}
+
+/* Animation échelonnée pour les cartes de principes */
+.principle-card:nth-child(1).animate-in { animation-delay: 0.1s; }
+.principle-card:nth-child(2).animate-in { animation-delay: 0.2s; }
+.principle-card:nth-child(3).animate-in { animation-delay: 0.3s; }
+.principle-card:nth-child(4).animate-in { animation-delay: 0.4s; }
+.principle-card:nth-child(5).animate-in { animation-delay: 0.5s; }
+.principle-card:nth-child(6).animate-in { animation-delay: 0.6s; }
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 1024px) {
+    .methodology-step,
+    .methodology-step.reverse {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .methodology-step.reverse .step-content,
+    .methodology-step.reverse .step-image {
+        order: unset;
+    }
+    
+    .step-image {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .principles-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .approach-hero {
+        padding: 100px 0 50px;
+    }
+    
+    .approach-intro {
+        padding: 60px 0;
+    }
+    
+    .approach-intro h2 {
+        font-size: 2rem;
+    }
+    
+    .intro-content p {
+        font-size: 1rem;
+    }
+    
+    .methodology {
+        padding: 60px 0;
+    }
+    
+    .methodology .section-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    
+    .methodology-step {
+        margin-bottom: 60px;
+    }
+    
+    .step-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .step-number {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+        margin: 0 auto;
+    }
+    
+    .step-info h3 {
+        font-size: 1.6rem;
+    }
+    
+    .step-description {
+        font-size: 1rem;
+    }
+    
+    .step-details li {
+        text-align: left;
+    }
+    
+    .step-image img {
+        height: 250px;
+    }
+    
+    .principles {
+        padding: 60px 0;
+    }
+    
+    .principles .section-title {
+        font-size: 2rem;
+    }
+    
+    .principles-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .principle-card {
+        padding: 30px 25px;
+    }
+    
+    .principle-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .principle-card h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .approach-hero {
+        padding: 90px 0 40px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .approach-intro {
+        padding: 50px 0;
+    }
+    
+    .approach-intro h2 {
+        font-size: 1.8rem;
+    }
+    
+    .methodology {
+        padding: 50px 0;
+    }
+    
+    .methodology .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .methodology-step {
+        margin-bottom: 50px;
+    }
+    
+    .step-info h3 {
+        font-size: 1.4rem;
+    }
+    
+    .step-description {
+        font-size: 0.95rem;
+    }
+    
+    .step-details {
+        padding: 0 10px;
+    }
+    
+    .step-image img {
+        height: 200px;
+    }
+    
+    .principles {
+        padding: 50px 0;
+    }
+    
+    .principles .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .principle-card {
+        padding: 25px 20px;
+    }
+    
+    .principle-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    
+    .principle-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+    
+    .principle-card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* ========================================
+   ACCESSIBILITÉ
+   ======================================== */
+
+/* Amélioration de l'accessibilité */
+@media (prefers-reduced-motion: reduce) {
+    .methodology-step,
+    .principle-card {
+        transition: none;
+        animation: none;
+    }
+    
+    .methodology-step.animate-in,
+    .principle-card.animate-in {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Effet de survol sur les liens internes */
+.step-details a,
+.principle-card a {
+    color: #5599C8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.step-details a:hover,
+.principle-card a:hover {
+    color: #F39736;
+    text-decoration: underline;
+}

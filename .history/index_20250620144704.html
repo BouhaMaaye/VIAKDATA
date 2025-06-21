@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>IAKDATA - De la donnée aux décisions, avec méthode</title>
+    <!--icons code -->
+    <script src="https://kit.fontawesome.com/a9decbbec9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="new-header">
+        <div class="header-container">
+            <a href="#" class="header-logo">
+                <div class="logo-content">
+                    <h1>IAKDATA</h1>
+                    <p>De la donnée aux décisions, avec méthode</p>
+                </div>
+            </a>
+            <nav class="header-nav">
+                <ul class="header-menu">
+                    <li><a href="#home" data-key="home">Accueil</a></li>
+                    <li><a href="#why-choose" data-key="about">À propos</a></li>
+                    <li><a href="#offers-detail" data-key="services">Nos Offres</a></li>
+                    <li><a href="contact.html" data-key="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="language-selector">
+                    <button id="lang-btn">FR</button>
+                    <div id="lang-menu" class="lang-menu">
+                        <button onclick="setLanguage('fr')" id="lang-fr">FR</button>
+                        <button onclick="setLanguage('en')" id="lang-en">EN</button>
+                    </div>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="home">
+        <div id="particles-js"></div>
+        <div class="home__content">
+            <h1 class="title" data-key="welcome_title">
+                Transformez vos Données<br>
+                en Avantage Concurrentiel<br><br>
+            </h1>
+            <p data-key="welcome_message">
+                Avec notre expertise en IA et Data Science, nous propulsons votre entreprise vers l'excellence.<br><br>
+                Accompagnement des PME industrielles françaises dans leur transformation digitale.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section Pourquoi choisir IAKDATA -->
+    <section id="why-choose" class="why-choose">
+        <div class="container">
+            <h2 class="section-title" data-key="why_choose_title">Pourquoi choisir IAKDATA ?</h2>
+            <div class="why-choose-container">
+                <div class="why-choose-item">
+                    <div class="why-choose-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 data-key="progressive_approach">Approche progressive</h3>
+                    <p data-key="progressive_description">
+                        Des solutions adaptées à votre niveau de maturité data, pour avancer à votre rythme 
+                        sans surinvestissement.
+                    </p>
+                </div>
+                <div class="why-choose-item">
+                    <div class="why-choose-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3 data-key="pragmatic_solutions">Solutions pragmatiques</h3>
+                    <p data-key="pragmatic_description">
+                        Des cas d'usage concrets et à forte valeur ajoutée, adaptés aux réalités opérationnelles 
+                        des PME industrielles.
+                    </p>
+                </div>
+                <div class="why-choose-item">
+                    <div class="why-choose-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3 data-key="sector_expertise">Expertise sectorielle</h3>
+                    <p data-key="sector_description">
+                        Une connaissance approfondie des enjeux industriels et des solutions data/IA adaptées 
+                        à votre secteur.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Nos offres détaillées -->
+    <section id="offers-detail" class="offers-detail">
+        <div class="container">
+            <h2 class="section-title" data-key="our_offers">Nos offres</h2>
+            <p class="section-subtitle" data-key="offers_subtitle">
+                Trois niveaux d'intervention adaptés à votre maturité data et à vos objectifs business.
+            </p>
+            <div class="offers-container">
+                <div class="offer-card">
+                    <div class="offer-header">
+                        <h3 data-key="data_first">Data First</h3>
+                    </div>
+                    <p class="offer-description" data-key="data_first_description">
+                        Structurez et fiabilisez vos données pour créer des fondations solides.
+                    </p>
+                    <ul class="offer-features">
+                        <li><i class="fas fa-check-circle"></i> <span data-key="data_diagnostic">Diagnostic de maturité data</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-key="data_mapping">Cartographie des données</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-key="quick_wins">Quick wins opérationnels</span></li>
+                    </ul>
+                    <button class="offer-btn" data-key="learn_more">En savoir plus</button>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-header">
+                        <h3 data-key="ia_ready">IA Ready</h3>
+                    </div>
+                    <p class="offer-description" data-key="ia_ready_description">
+                        Déployez des cas d'usage IA simples et à forte valeur ajoutée.
+                    </p>
+                    <ul class="offer-features">
+                        <li><i class="fas fa-check-circle"></i> <span data-key="use_case_identification">Identification des cas d'usage</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-key="mvp_development">Développement de MVP</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-key="deployment_support">Accompagnement au déploiement</span></li>
+                    </ul>
+                    <button class="offer-btn" data-key="learn_more">En savoir plus</button>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-header">
+                        <h3 data-key="ia_clarity">IA Clarity</h3>
+                    </div>
+                    <p class="offer-description" data-key="ia_clarity_description">
+                        Clarifiez vos priorités IA et construisez votre feuille de route.
+                    </p>
+                    <ul class="offer-features">
+                        <li><i class="fas fa-check-circle"></i> <span data-key="strategic_advice">Conseil stratégique</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-key="initiative_prioritization">Priorisation des initiatives</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-key="detailed_roadmap">Feuille de route détaillée</span></li>
+                    </ul>
+                    <button class="offer-btn" data-key="learn_more">En savoir plus</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Secteurs d'expertise -->
+    <section id="sectors" class="sectors">
+        <div class="container">
+            <h2 class="section-title" data-key="expertise_sectors">Secteurs d'expertise</h2>
+            <p class="section-subtitle" data-key="sectors_subtitle">
+                Des solutions adaptées aux spécificités de votre industrie.
+            </p>
+            <div class="sectors-container">
+                <div class="sector-item">
+                    <div class="sector-icon">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <h3 data-key="metallurgy">Métallurgie</h3>
+                    <p data-key="metallurgy_description">
+                        Optimisation des processus, maintenance prédictive, contrôle qualité.
+                    </p>
+                </div>
+                <div class="sector-item">
+                    <div class="sector-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 data-key="plastics">Plasturgie</h3>
+                    <p data-key="plastics_description">
+                        Réduction des rebuts, optimisation des paramètres, traçabilité.
+                    </p>
+                </div>
+                <div class="sector-item">
+                    <div class="sector-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 data-key="agrofood">Agroalimentaire</h3>
+                    <p data-key="agrofood_description">
+                        Sécurité alimentaire, optimisation des recettes, gestion de la chaîne du froid.
+                    </p>
+                </div>
+                <div class="sector-item">
+                    <div class="sector-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3 data-key="mechanics">Mécanique</h3>
+                    <p data-key="mechanics_description">
+                        Optimisation des processus d'usinage, contrôle qualité, planification.
+                    </p>
+                </div>
+            </div>
+            <div class="sectors-cta">
+                <button class="sector-btn" data-key="discover_all_sectors">Découvrir tous nos secteurs d'expertise</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section class="testimonials-modern">
+        <h2 class="section-title" data-key="client_testimonials">Ce Que Nos Clients Disent</h2>
+        <div class="testimonials-slider">
+            <div class="testimonial-slide">
+                <div class="testimonial-image">
+                    <img src="assets/client1.png" alt="Logo Client 1">
+                </div>
+                <div class="testimonial-text-content" data-key="testimonial1_text">
+                    <p>"IAKDATA a révolutionné notre approche data et nous a fait gagner 40% d'efficacité."</p>
+                    <span data-key="testimonial1_author">— Directeur Technique, IndustrieTech</span>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-image">
+                    <img src="assets/client2.png" alt="Logo Client 2">
+                </div>
+                <div class="testimonial-text-content">
+                    <p data-key="testimonial2_text">"Une expertise IA remarquable adaptée à nos besoins industriels."</p>
+                    <span data-key="testimonial2_author">— CEO, Manufacturing Solutions</span>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-image">
+                    <img src="assets/client3.png" alt="Logo Client 3">
+                </div>
+                <div class="testimonial-text-content">
+                    <p data-key="testimonial3_text">"Leur approche méthodique a transformé nos données en gold mine."</p>
+                    <span data-key="testimonial3_author">— Responsable Data, TechnoPlus</span>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-image">
+                    <img src="assets/client4.png" alt="Logo Client 4">
+                </div>
+                <div class="testimonial-text-content">
+                    <p data-key="testimonial4_text">"Un accompagnement de qualité pour notre transformation digitale."</p>
+                    <span data-key="testimonial4_author">— Directeur Innovation, SmartIndustry</span>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-image">
+                    <img src="assets/client5.png" alt="Logo Client 5">
+                </div>
+                <div class="testimonial-text-content">
+                    <p data-key="testimonial5_text">"ROI visible dès les premiers mois de collaboration."</p>
+                    <span data-key="testimonial5_author">— CFO, DataDriven Corp</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CTA - Diagnostic gratuit -->
+    <section id="cta-diagnostic" class="cta-diagnostic">
+        <div class="container">
+            <h2 class="cta-title" data-key="ready_to_transform">Prêt à transformer vos données en décisions ?</h2>
+            <p class="cta-description" data-key="contact_today">
+                Contactez-nous dès aujourd'hui pour un diagnostic gratuit de votre maturité data et 
+                découvrez comment IAKDATA peut vous accompagner dans votre transformation digitale.
+            </p>
+            <a href="contact.html" class="cta-button" data-key="request_free_diagnostic">Demander un diagnostic gratuit</a>
+        </div>
+    </section>
+
+    <!-- Footer avec couleurs IAKDATA -->
+    <footer>
+        <div class="footer-column">
+            <h3 data-key="follow_us">Suivez-nous</h3>
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:contact@iakdata.fr"><i class="fa-brands fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p><a href="mailto:contact@iakdata.fr">contact@iakdata.fr</a></p>
+            <p>Haute-Savoie, France</p>
+            <p><br>Consultation gratuite disponible</p>
+        </div>
+        <div class="footer-column">
+            <h3>Nos Services</h3>
+            <p><a href="#offers-detail" data-key="services">Data First</a></p>
+            <p><a href="#offers-detail" data-key="services">IA Ready</a></p>
+            <p><a href="#offers-detail" data-key="services">IA Clarity</a></p>
+            <p><a href="#offers-detail" data-key="services">Formation</a></p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;2025 IAKDATA SAS, <span data-key="all_rights_reserved">tous droits réservés</span></p>
+            <p data-key="site_by">Accompagnement des PME industrielles françaises</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            var nav = document.querySelector('.header-nav');
+            nav.classList.toggle('active');
+            this.setAttribute('aria-expanded', nav.classList.contains('active'));
+        });
+        
+        // Fermer le menu automatiquement lorsqu'un lien est cliqué
+        document.querySelectorAll('.header-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                var nav = document.querySelector('.header-nav');
+                nav.classList.remove('active');
+                document.getElementById('hamburger').setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
+    
+    <script>
+        window.onload = function() {
+            const defaultLang = 'fr';
+            setLanguage(defaultLang);
+        };
+
+        function setLanguage(lang) {
+            fetch(`lang/${lang}.json`)
+                .then(response => response.json())
+                .then(data => {
+                    document.querySelectorAll('[data-key]').forEach(element => {
+                        const key = element.getAttribute('data-key');
+                        element.innerHTML = data[key];
+                    });
+
+                    document.documentElement.setAttribute('lang', lang);
+                    document.getElementById('lang-btn').innerText = lang.toUpperCase();
+
+                    // Afficher uniquement les langues non sélectionnées
+                    document.getElementById('lang-fr').style.display = lang === 'fr' ? 'none' : 'block';
+                    document.getElementById('lang-en').style.display = lang === 'en' ? 'none' : 'block';
+
+                    if (lang === 'ar') {
+                        document.body.style.direction = 'rtl';
+                        document.body.style.textAlign = 'right';
+                    } else {
+                        document.body.style.direction = 'ltr';
+                        document.body.style.textAlign = 'left';
+                    }
+                });
+        }
+
+        document.getElementById('lang-btn').addEventListener('click', function() {
+            document.getElementById('lang-menu').classList.toggle('show');
+        });
+        
+        window.addEventListener('scroll', function() {
+            var aboutSection = document.querySelector('.why-choose');
+            if (aboutSection) {
+                var sectionPosition = aboutSection.getBoundingClientRect().top;
+                var screenPosition = window.innerHeight / 1.3;
+
+                if (sectionPosition < screenPosition) {
+                    aboutSection.classList.add('in-view');
+                }
+            }
+        });
+    </script>
+</body>

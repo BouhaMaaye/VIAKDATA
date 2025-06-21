@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - IAKDATA | Transformez vos données en décisions</title>
+    <meta name="description" content="Contactez IAKDATA pour un diagnostic gratuit de votre maturité data. Experts en IA et analyse de données pour PME industrielles.">
+    
+    <!-- Liens vers les fichiers CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Polices Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Particles.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="new-header">
+        <div class="header-container">
+            <a href="index.html" class="header-logo">
+                <div class="logo-content">
+                    <h1>IAKDATA</h1>
+                    <p>Intelligence Artificielle & Data</p>
+                </div>
+            </a>
+            <nav class="header-nav">
+                <ul class="header-menu">
+                    <li><a href="index.html#home">Accueil</a></li>
+                    <li><a href="index.html#why-choose">Pourquoi nous</a></li>
+                    <li><a href="index.html#offers-detail">Nos offres</a></li>
+                    <li><a href="index.html#sectors">Secteurs</a></li>
+                    <li><a href="index.html#testimonials">Témoignages</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="language-selector">
+                    <button id="lang-btn">FR</button>
+                    <div class="lang-menu">
+                        <button onclick="changeLanguage('fr')">Français</button>
+                        <button onclick="changeLanguage('en')">English</button>
+                    </div>
+                </div>
+            </nav>
+            <button class="hamburger">
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section Contact -->
+    <section class="contact-hero">
+        <div id="particles-js-contact"></div>
+        <div class="contact-hero-content">
+            <h1 class="contact-title">Contactez-nous</h1>
+            <p class="contact-subtitle">
+                Prêt à transformer vos données en décisions stratégiques ? 
+                Parlons de votre projet et découvrez comment IAKDATA peut accélérer votre transformation digitale.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section Contact Principal -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Demandez votre diagnostic gratuit</h2>
+                    <p class="contact-info-text">
+                        Nos experts analysent votre maturité data et vous proposent des solutions adaptées 
+                        à vos enjeux industriels. Un premier échange gratuit et sans engagement.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>contact@iakdata.fr</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Téléphone</h4>
+                                <p>+33 (0)4 XX XX XX XX</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Localisation</h4>
+                                <p>Haute-Savoie, France</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Disponibilité</h4>
+                                <p>Lun - Ven : 9h - 18h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-header">
+                            <h3>Parlez-nous de votre projet</h3>
+                            <p>Tous les champs marqués d'un <span class="required">*</span> sont obligatoires</p>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Prénom <span class="required">*</span></label>
+                                <input type="text" id="firstName" name="firstName" required placeholder="Votre prénom">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Nom <span class="required">*</span></label>
+                                <input type="text" id="lastName" name="lastName" required placeholder="Votre nom">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email professionnel <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required placeholder="votre.email@entreprise.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+33 1 23 45 67 89">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="company">Entreprise <span class="required">*</span></label>
+                                <input type="text" id="company" name="company" required placeholder="Nom de votre entreprise">
+                            </div>
+                            <div class="form-group">
+                                <label for="position">Fonction</label>
+                                <input type="text" id="position" name="position" placeholder="Votre poste">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="sector">Secteur d'activité</label>
+                            <select id="sector" name="sector">
+                                <option value="">Sélectionnez votre secteur</option>
+                                <option value="metallurgie">Métallurgie</option>
+                                <option value="plasturgie">Plasturgie</option>
+                                <option value="agroalimentaire">Agroalimentaire</option>
+                                <option value="mecanique">Mécanique</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="interest">Votre intérêt principal</label>
+                            <select id="interest" name="interest">
+                                <option value="">Que recherchez-vous ?</option>
+                                <option value="diagnostic">Diagnostic de maturité data</option>
+                                <option value="data-first">Solution Data First</option>
+                                <option value="ia-ready">Solution IA Ready</option>
+                                <option value="ia-clarity">Solution IA Clarity</option>
+                                <option value="conseil">Conseil stratégique</option>
+                                <option value="autre">Autre besoin</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Décrivez votre projet <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" required 
+                                placeholder="Parlez-nous de vos enjeux, objectifs, et défis actuels en matière de données et d'IA..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="consent" name="consent" required>
+                                <span class="checkmark"></span>
+                                J'accepte d'être contacté par IAKDATA concernant ma demande <span class="required">*</span>
+                            </label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Je souhaite recevoir la newsletter IAKDATA avec les actualités du secteur
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Envoyer ma demande</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CTA Diagnostic -->
+    <section class="diagnostic-cta">
+        <div class="container">
+            <div class="diagnostic-content">
+                <div class="diagnostic-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="diagnostic-text">
+                    <h3>Diagnostic gratuit de votre maturité data</h3>
+                    <p>En 30 minutes, évaluez le potentiel de vos données et identifiez les quick wins pour votre entreprise.</p>
+                </div>
+                <a href="#contact-form" class="diagnostic-btn">Planifier mon diagnostic</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="col1">
+            <h3>IAKDATA</h3>
+            <p>Transformez vos données en décisions stratégiques. Expertise IA et data pour PME industrielles.</p>
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:contact@iakdata.fr"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="col2">
+            <p class="small_title">Navigation</p>
+            <a href="index.html">Accueil</a>
+            <a href="index.html#why-choose">Pourquoi IAKDATA</a>
+            <a href="index.html#offers-detail">Nos offres</a>
+            <a href="index.html#sectors">Secteurs</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="col3">
+            <p class="small_title">Services</p>
+            <a href="#">Data First</a>
+            <a href="#">IA Ready</a>
+            <a href="#">IA Clarity</a>
+            <a href="#">Diagnostic gratuit</a>
+            <a href="#">Conseil stratégique</a>
+        </div>
+        <div class="col4">
+            <button onclick="scrollToTop()">Retour en haut</button>
+        </div>
+        
+        <div class="footer-bottom">
+            <span>&copy; 2024 IAKDATA. Tous droits réservés.</span> | 
+            <a href="#">Mentions légales</a> | 
+            <a href="#">Politique de confidentialité</a>
+        </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <button onclick="scrollToTop()" id="backToTopBtn" title="Retour en haut">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script>
+        // Particles.js configuration pour la page contact
+        particlesJS('particles-js-contact', {
+            particles: {
+                number: { value: 50 },
+                color: { value: '#5599C8' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.6 },
+                size: { value: 3 },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#5599C8',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'repulse' },
+                    onclick: { enable: true, mode: 'push' }
+                }
+            }
+        });
+
+        // Gestion du formulaire
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const submitBtn = this.querySelector('.submit-btn');
+            const btnText = submitBtn.querySelector('.btn-text');
+            
+            // Animation de loading
+            submitBtn.classList.add('loading');
+            btnText.textContent = 'Envoi en cours...';
+            
+            // Simulation d'envoi (remplacer par votre logique)
+            setTimeout(() => {
+                submitBtn.classList.remove('loading');
+                btnText.textContent = 'Message envoyé !';
+                submitBtn.style.background = 'linear-gradient(135deg, #28a745 0%, #20c997 100%)';
+                
+                // Reset après 3 secondes
+                setTimeout(() => {
+                    btnText.textContent = 'Envoyer ma demande';
+                    submitBtn.style.background = '';
+                    this.reset();
+                }, 3000);
+            }, 2000);
+        });
+
+        // Menu hamburger
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.header-nav').classList.toggle('active');
+        });
+
+        // Scroll to top
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Show/hide back to top button
+        window.addEventListener('scroll', function() {
+            const backToTopBtn = document.getElementById('backToTopBtn');
+            if (window.pageYOffset > 300) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.new-header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Language selector
+        function changeLanguage(lang) {
+            document.getElementById('lang-btn').textContent = lang.toUpperCase();
+            // Ici vous pouvez ajouter la logique de changement de langue
+        }
+
+        // Smooth scroll pour les liens ancres
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

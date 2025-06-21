@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="nos-offres.css"/>
+    <title>Nos Offres - IAKDATA | De la donnée aux décisions, avec méthode</title>
+    <!--icons code -->
+    <script src="https://kit.fontawesome.com/a9decbbec9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="new-header">
+        <div class="header-container">
+            <a href="index.html" class="header-logo">
+                <div class="logo-content">
+                    <h1>IAKDATA</h1>
+                    <p>De la donnée aux décisions, avec méthode</p>
+                </div>
+            </a>
+            <nav class="header-nav">
+                <ul class="header-menu">
+                    <li><a href="index.html#home" data-key="home">Accueil</a></li>
+                    <li><a href="notre-approche.html" data-key="approach">Notre Approche</a></li>
+                    <li><a href="nos-offres.html" data-key="services" class="active">Nos Offres</a></li>
+                    <li><a href="contact.html" data-key="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="language-selector">
+                    <button id="lang-btn">FR</button>
+                    <div id="lang-menu" class="lang-menu">
+                        <button onclick="setLanguage('fr')" id="lang-fr">FR</button>
+                        <button onclick="setLanguage('en')" id="lang-en">EN</button>
+                    </div>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section Nos Offres -->
+    <section class="offers-hero">
+        <div class="container">
+            <h1 class="hero-title">Nos offres</h1>
+            <p class="hero-description">
+                Des solutions data et IA adaptées à votre niveau de maturité et à vos objectifs business.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section Introduction -->
+    <section class="offers-intro">
+        <div class="container">
+            <h2>Une approche progressive</h2>
+            <div class="intro-content">
+                <p>
+                    Chez IAKDATA, nous croyons qu'une transformation digitale réussie passe par une approche 
+                    progressive, adaptée à votre niveau de maturité data. Nos offres sont conçues pour vous 
+                    accompagner à chaque étape de votre parcours, des fondations data jusqu'à l'IA avancée.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Offres Principales -->
+    <section class="main-offers">
+        <div class="container">
+            
+            <!-- Offre 1: Data First -->
+            <div class="offer-card">
+                <div class="offer-content">
+                    <div class="offer-level">
+                        <span class="level-badge level-1">Niveau 1</span>
+                    </div>
+                    <h3 class="offer-title">Data First</h3>
+                    <p class="offer-subtitle">
+                        Structurez et fiabilisez vos données pour créer des fondations 
+                        solides à votre transformation digitale.
+                    </p>
+                    <p class="offer-description">
+                        L'offre Data First est idéale pour les entreprises qui souhaitent commencer 
+                        leur parcours data ou qui rencontrent des problèmes de qualité et de 
+                        fiabilité dans leurs données existantes.
+                    </p>
+                    
+                    <div class="offer-services">
+                        <h4>Ce que nous proposons :</h4>
+                        <ul class="services-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Diagnostic de maturité data</strong>
+                                    <span>Évaluation complète de votre infrastructure, processus et compétences data.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Cartographie des données</strong>
+                                    <span>Visualisation claire de vos flux de données et systèmes d'information.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Plan d'amélioration</strong>
+                                    <span>Recommandations concrètes et priorisées pour améliorer votre infrastructure data.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Quick wins opérationnels</strong>
+                                    <span>Mise en œuvre rapide d'améliorations à fort impact.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="offer-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Format :</span>
+                            <span class="detail-value">Diagnostic + Quickwins</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Durée typique :</span>
+                            <span class="detail-value">4-8 semaines</span>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="offer-button">Demander un devis</a>
+                </div>
+                <div class="offer-image">
+                    <img src="/api/placeholder/400/300" alt="Data First illustration">
+                </div>
+            </div>
+
+            <!-- Offre 2: IA Ready -->
+            <div class="offer-card reverse">
+                <div class="offer-image">
+                    <img src="/api/placeholder/400/300" alt="IA Ready illustration">
+                </div>
+                <div class="offer-content">
+                    <div class="offer-level">
+                        <span class="level-badge level-2">Niveau 2</span>
+                    </div>
+                    <h3 class="offer-title">IA Ready</h3>
+                    <p class="offer-subtitle">
+                        Déployez des cas d'usage IA simples et à forte valeur ajoutée pour 
+                        votre entreprise.
+                    </p>
+                    <p class="offer-description">
+                        L'offre IA Ready s'adresse aux entreprises qui disposent déjà de données 
+                        structurées et qui souhaitent les valoriser à travers des cas d'usage IA 
+                        concrets et rapidement opérationnels.
+                    </p>
+                    
+                    <div class="offer-services">
+                        <h4>Ce que nous proposons :</h4>
+                        <ul class="services-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Identification des cas d'usage</strong>
+                                    <span>Analyse de vos processus pour identifier les opportunités d'IA à fort ROI.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Développement de MVP</strong>
+                                    <span>Création rapide de prototypes fonctionnels pour valider la valeur business.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Industrialisation</strong>
+                                    <span>Renforcement technique pour une mise en production robuste et évolutive.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Accompagnement au déploiement</strong>
+                                    <span>Formation des utilisateurs et support pour une adoption réussie.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="offer-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Format :</span>
+                            <span class="detail-value">MVP + accompagnement</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Durée typique :</span>
+                            <span class="detail-value">2-4 mois</span>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="offer-button">Demander un devis</a>
+                </div>
+            </div>
+
+            <!-- Offre 3: IA Clarity -->
+            <div class="offer-card">
+                <div class="offer-content">
+                    <div class="offer-level">
+                        <span class="level-badge level-3">Niveau 3</span>
+                    </div>
+                    <h3 class="offer-title">IA Clarity</h3>
+                    <p class="offer-subtitle">
+                        Clarifiez vos priorités IA et construisez une feuille de route 
+                        stratégique pour votre transformation digitale.
+                    </p>
+                    <p class="offer-description">
+                        L'offre IA Clarity s'adresse aux directions générales et comités de direction 
+                        qui souhaitent définir une vision claire et une stratégie cohérente pour 
+                        l'adoption de l'IA dans leur entreprise.
+                    </p>
+                    
+                    <div class="offer-services">
+                        <h4>Ce que nous proposons :</h4>
+                        <ul class="services-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Conseil stratégique</strong>
+                                    <span>Accompagnement de la direction dans la définition de la vision IA.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Analyse d'impact business</strong>
+                                    <span>Évaluation du potentiel de l'IA sur vos processus métier et votre modèle économique.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Priorisation des initiatives</strong>
+                                    <span>Identification et hiérarchisation des projets IA selon leur valeur et faisabilité.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Feuille de route détaillée</strong>
+                                    <span>Plan d'action concret avec jalons, ressources nécessaires et indicateurs de succès.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="offer-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Format :</span>
+                            <span class="detail-value">Conseil stratégique + roadmap</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Durée typique :</span>
+                            <span class="detail-value">6-10 semaines</span>
+                        </div>
+                    </div>
+                    
+                    <a href="contact.html" class="offer-button">Demander un devis</a>
+                </div>
+                <div class="offer-image">
+                    <img src="/api/placeholder/400/300" alt="IA Clarity illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Packs Complémentaires -->
+    <section class="complementary-packs">
+        <div class="container">
+            <h2 class="section-title">Packs complémentaires</h2>
+            <p class="section-description">
+                Des modules additionnels pour compléter nos offres principales et répondre à vos 
+                besoins spécifiques.
+            </p>
+            
+            <div class="packs-grid">
+                <!-- Pack Formation IA -->
+                <div class="pack-card">
+                    <div class="pack-header">
+                        <h3>Formation IA utile</h3>
+                    </div>
+                    <div class="pack-content">
+                        <p class="pack-description">
+                            Formez vos équipes aux concepts et outils 
+                            de l'IA adaptés à leur métier.
+                        </p>
+                        <ul class="pack-features">
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Modules adaptés par profil</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Approche pratique et concrète</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Ateliers sur cas réels</span>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="pack-button">En savoir plus</a>
+                    </div>
+                </div>
+
+                <!-- Pack Référentiels -->
+                <div class="pack-card">
+                    <div class="pack-header">
+                        <h3>Référentiels data</h3>
+                    </div>
+                    <div class="pack-content">
+                        <p class="pack-description">
+                            Structurez et standardisez vos données 
+                            pour une utilisation optimale.
+                        </p>
+                        <ul class="pack-features">
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Modélisation des données</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Gouvernance et qualité</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Documentation technique</span>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="pack-button">En savoir plus</a>
+                    </div>
+                </div>
+
+                <!-- Pack Tableaux de bord -->
+                <div class="pack-card">
+                    <div class="pack-header">
+                        <h3>Tableaux de bord Power BI</h3>
+                    </div>
+                    <div class="pack-content">
+                        <p class="pack-description">
+                            Visualisez vos données métier pour une 
+                            prise de décision éclairée.
+                        </p>
+                        <ul class="pack-features">
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Conception sur mesure</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Intégration multi-sources</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <span>Formation utilisateurs</span>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="pack-button">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CTA -->
+    <section class="cta-diagnostic">
+        <div class="container">
+            <h2 class="cta-title">Quelle offre correspond à vos besoins ?</h2>
+            <p class="cta-description">
+                Discutons de votre situation actuelle et de vos objectifs pour identifier l'approche 
+                la mieux adaptée à votre entreprise.
+            </p>
+            <a href="contact.html" class="cta-button">Demander un diagnostic gratuit</a>
+        </div>
+    </section>
+
+    <!-- Footer avec couleurs IAKDATA -->
+    <footer>
+        <div class="footer-column">
+            <h3 data-key="follow_us">Suivez-nous</h3>
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:contact@iakdata.fr"><i class="fa-brands fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p><a href="mailto:contact@iakdata.fr">contact@iakdata.fr</a></p>
+            <p>Haute-Savoie, France</p>
+            <p><br>Consultation gratuite disponible</p>
+        </div>
+        <div class="footer-column">
+            <h3>Nos Services</h3>
+            <p><a href="#main-offers" data-key="services">Data First</a></p>
+            <p><a href="#main-offers" data-key="services">IA Ready</a></p>
+            <p><a href="#main-offers" data-key="services">IA Clarity</a></p>
+            <p><a href="#complementary-packs" data-key="services">Formation</a></p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;2025 IAKDATA SAS, <span data-key="all_rights_reserved">tous droits réservés</span></p>
+            <p data-key="site_by">Accompagnement des PME industrielles françaises</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            var nav = document.querySelector('.header-nav');
+            nav.classList.toggle('active');
+            this.setAttribute('aria-expanded', nav.classList.contains('active'));
+        });
+        
+        // Fermer le menu automatiquement lorsqu'un lien est cliqué
+        document.querySelectorAll('.header-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                var nav = document.querySelector('.header-nav');
+                nav.classList.remove('active');
+                document.getElementById('hamburger').setAttribute('aria-expanded', 'false');
+            });
+        });
+        
+        // Langue
+        function setLanguage(lang) {
+            document.getElementById('lang-btn').innerText = lang.toUpperCase();
+            document.getElementById('lang-fr').style.display = lang === 'fr' ? 'none' : 'block';
+            document.getElementById('lang-en').style.display = lang === 'en' ? 'none' : 'block';
+        }
+
+        document.getElementById('lang-btn').addEventListener('click', function() {
+            document.getElementById('lang-menu').classList.toggle('show');
+        });
+
+        // Animation au scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observer les éléments à animer
+        document.querySelectorAll('.offer-card, .pack-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

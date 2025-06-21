@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="notre-approche.css"/>
+    <title>Notre Approche - IAKDATA | De la donnée aux décisions, avec méthode</title>
+    <!--icons code -->
+    <script src="https://kit.fontawesome.com/a9decbbec9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="new-header">
+        <div class="header-container">
+            <a href="index.html" class="header-logo">
+                <div class="logo-content">
+                    <h1>IAKDATA</h1>
+                    <p>De la donnée aux décisions, avec méthode</p>
+                </div>
+            </a>
+            <nav class="header-nav">
+                <ul class="header-menu">
+                    <li><a href="index.html#home" data-key="home">Accueil</a></li>
+                    <li><a href="notre-approche.html" data-key="approach" class="active">Notre Approche</a></li>
+                    <li><a href="index.html#offers-detail" data-key="services">Nos Offres</a></li>
+                    <li><a href="contact.html" data-key="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="language-selector">
+                    <button id="lang-btn">FR</button>
+                    <div id="lang-menu" class="lang-menu">
+                        <button onclick="setLanguage('fr')" id="lang-fr">FR</button>
+                        <button onclick="setLanguage('en')" id="lang-en">EN</button>
+                    </div>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section Notre Approche -->
+    <section class="approach-hero">
+        <div class="container">
+            <h1 class="hero-title">Notre approche</h1>
+            <p class="hero-description">
+                Une méthodologie pragmatique et progressive pour transformer vos données en avantage compétitif.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section Introduction -->
+    <section class="approach-intro">
+        <div class="container">
+            <h2>De la donnée aux décisions, avec méthode</h2>
+            <div class="intro-content">
+                <p>
+                    Chez IAKDATA, nous croyons que la transformation digitale des PME industrielles doit être 
+                    pragmatique, progressive et performante. Notre approche est conçue pour vous accompagner 
+                    à chaque étape de votre parcours data et IA, en tenant compte de votre maturité actuelle et de 
+                    vos objectifs business.
+                </p>
+                <p>
+                    Nous ne proposons pas de solutions standardisées, mais une démarche sur mesure qui 
+                    s'adapte à votre contexte, vos contraintes et vos ambitions. Notre objectif est de vous aider à 
+                    transformer vos données en décisions éclairées, avec méthode et sans surinvestissement.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Méthodologie 4 étapes -->
+    <section class="methodology">
+        <div class="container">
+            <h2 class="section-title">Notre méthodologie en 4 étapes</h2>
+            
+            <!-- Étape 1: Évaluation -->
+            <div class="methodology-step">
+                <div class="step-content">
+                    <div class="step-number">1</div>
+                    <div class="step-info">
+                        <h3>Évaluation</h3>
+                        <p class="step-description">
+                            Nous commençons par une évaluation approfondie de votre situation 
+                            actuelle : infrastructure technique, qualité des données, processus métier, 
+                            compétences internes et objectifs stratégiques. Cette phase nous permet 
+                            de comprendre vos enjeux spécifiques et d'identifier les opportunités 
+                            d'amélioration.
+                        </p>
+                        <ul class="step-details">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Diagnostic de maturité data</strong>
+                                    <span>Évaluation de votre niveau de maturité selon 6 dimensions clés.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Cartographie des données</strong>
+                                    <span>Identification des sources, flux et systèmes d'information.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Analyse des besoins métier</strong>
+                                    <span>Compréhension des objectifs business et des points de douleur.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="step-image">
+                    <img src="/api/placeholder/400/300" alt="Évaluation">
+                </div>
+            </div>
+
+            <!-- Étape 2: Fondation -->
+            <div class="methodology-step reverse">
+                <div class="step-image">
+                    <img src="/api/placeholder/400/300" alt="Fondation">
+                </div>
+                <div class="step-content">
+                    <div class="step-number">2</div>
+                    <div class="step-info">
+                        <h3>Fondation</h3>
+                        <p class="step-description">
+                            La deuxième étape consiste à mettre en place les fondations nécessaires à 
+                            votre transformation digitale. Nous structurons vos données, améliorons 
+                            leur qualité et créons les infrastructures techniques adaptées à vos 
+                            besoins actuels et futurs.
+                        </p>
+                        <ul class="step-details">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Structuration des données</strong>
+                                    <span>Mise en place de référentiels et standardisation des formats.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Amélioration de la qualité</strong>
+                                    <span>Nettoyage, enrichissement et validation des données.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Infrastructure technique</strong>
+                                    <span>Mise en place des outils et plateformes nécessaires.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Étape 3: Activation -->
+            <div class="methodology-step">
+                <div class="step-content">
+                    <div class="step-number">3</div>
+                    <div class="step-info">
+                        <h3>Activation</h3>
+                        <p class="step-description">
+                            Une fois les fondations en place, nous déployons les premiers cas d'usage 
+                            à valeur rapide. Nous identifions les opportunités d'IA pragmatiques et 
+                            développons des solutions adaptées à vos besoins spécifiques, avec un 
+                            focus sur le ROI et l'adoption par les utilisateurs.
+                        </p>
+                        <ul class="step-details">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Identification des cas d'usage</strong>
+                                    <span>Priorisation selon la valeur business et la faisabilité technique.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Développement de MVP</strong>
+                                    <span>Création rapide de prototypes fonctionnels pour validation.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Déploiement et adoption</strong>
+                                    <span>Mise en production et accompagnement des utilisateurs.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="step-image">
+                    <img src="/api/placeholder/400/300" alt="Activation">
+                </div>
+            </div>
+
+            <!-- Étape 4: Évolution -->
+            <div class="methodology-step reverse">
+                <div class="step-image">
+                    <img src="/api/placeholder/400/300" alt="Évolution">
+                </div>
+                <div class="step-content">
+                    <div class="step-number">4</div>
+                    <div class="step-info">
+                        <h3>Évolution</h3>
+                        <p class="step-description">
+                            La dernière étape consiste à faire évoluer vos solutions data et IA de 
+                            manière itérative, en capitalisant sur les apprentissages et en développant 
+                            de nouveaux cas d'usage. Nous vous accompagnons dans la montée en 
+                            maturité de votre organisation et l'industrialisation de vos processus data.
+                        </p>
+                        <ul class="step-details">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Amélioration continue</strong>
+                                    <span>Optimisation des solutions existantes basée sur les retours utilisateurs.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Nouveaux cas d'usage</strong>
+                                    <span>Identification et déploiement de solutions complémentaires.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Industrialisation</strong>
+                                    <span>Mise à l'échelle des solutions et automatisation des processus.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Principes Fondamentaux -->
+    <section class="principles">
+        <div class="container">
+            <h2 class="section-title">Nos principes fondamentaux</h2>
+            <div class="principles-grid">
+                <!-- Pragmatisme -->
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Pragmatisme</h3>
+                    <p>
+                        Nous privilégions les solutions concrètes et adaptées à vos réalités opérationnelles, avec 
+                        un focus sur la valeur business et le ROI. Pas de technologie pour la technologie, mais des 
+                        outils qui répondent à vos besoins réels.
+                    </p>
+                </div>
+
+                <!-- Progressivité -->
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Progressivité</h3>
+                    <p>
+                        Nous croyons en une approche par étapes, adaptée à votre niveau de maturité et à vos 
+                        capacités d'absorption. Nous construisons des fondations solides avant de déployer 
+                        des solutions avancées, pour garantir des résultats durables.
+                    </p>
+                </div>
+
+                <!-- Performance -->
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Performance</h3>
+                    <p>
+                        Nous visons l'excellence dans nos livrables et un impact mesurable sur votre 
+                        performance. Nous définissons des indicateurs clairs et suivons les résultats 
+                        pour garantir que nos solutions créent de la valeur pour votre entreprise.
+                    </p>
+                </div>
+
+                <!-- Transparence -->
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <h3>Transparence</h3>
+                    <p>
+                        Nous croyons en une communication claire et honnête. Nous expliquons nos 
+                        recommandations, partageons nos connaissances et vous donnons une visibilité 
+                        complète sur les projets. Pas de boîte noire, mais des solutions compréhensibles et 
+                        maîtrisées.
+                    </p>
+                </div>
+
+                <!-- Collaboration -->
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Collaboration</h3>
+                    <p>
+                        Nous travaillons en étroite collaboration avec vos équipes, en transfert de compétences 
+                        constant. Notre objectif est de vous rendre autonomes et de vous accompagner dans la 
+                        montée en compétences de vos collaborateurs.
+                    </p>
+                </div>
+
+                <!-- Souveraineté -->
+                <div class="principle-card">
+                    <div class="principle-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Souveraineté</h3>
+                    <p>
+                        Nous privilégions les solutions cloud souveraines et respectueuses de vos 
+                        données. Nous vous aidons à garder la maîtrise de vos actifs data et à respecter les 
+                        réglementations en vigueur (RGPD, etc.).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CTA -->
+    <section class="cta-diagnostic">
+        <div class="container">
+            <h2 class="cta-title">Prêt à démarrer votre transformation ?</h2>
+            <p class="cta-description">
+                Découvrez comment notre approche méthodologique peut s'adapter à votre contexte et vos ambitions.
+                Demandez votre diagnostic gratuit pour identifier vos opportunités prioritaires.
+            </p>
+            <a href="contact.html" class="cta-button">Demander un diagnostic gratuit</a>
+        </div>
+    </section>
+
+    <!-- Footer avec couleurs IAKDATA -->
+    <footer>
+        <div class="footer-column">
+            <h3 data-key="follow_us">Suivez-nous</h3>
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:contact@iakdata.fr"><i class="fa-brands fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p><a href="mailto:contact@iakdata.fr">contact@iakdata.fr</a></p>
+            <p>Haute-Savoie, France</p>
+            <p><br>Consultation gratuite disponible</p>
+        </div>
+        <div class="footer-column">
+            <h3>Nos Services</h3>
+            <p><a href="index.html#offers-detail" data-key="services">Data First</a></p>
+            <p><a href="index.html#offers-detail" data-key="services">IA Ready</a></p>
+            <p><a href="index.html#offers-detail" data-key="services">IA Clarity</a></p>
+            <p><a href="index.html#offers-detail" data-key="services">Formation</a></p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;2025 IAKDATA SAS, <span data-key="all_rights_reserved">tous droits réservés</span></p>
+            <p data-key="site_by">Accompagnement des PME industrielles françaises</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            var nav = document.querySelector('.header-nav');
+            nav.classList.toggle('active');
+            this.setAttribute('aria-expanded', nav.classList.contains('active'));
+        });
+        
+        // Fermer le menu automatiquement lorsqu'un lien est cliqué
+        document.querySelectorAll('.header-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                var nav = document.querySelector('.header-nav');
+                nav.classList.remove('active');
+                document.getElementById('hamburger').setAttribute('aria-expanded', 'false');
+            });
+        });
+        
+        // Langue
+        function setLanguage(lang) {
+            document.getElementById('lang-btn').innerText = lang.toUpperCase();
+            document.getElementById('lang-fr').style.display = lang === 'fr' ? 'none' : 'block';
+            document.getElementById('lang-en').style.display = lang === 'en' ? 'none' : 'block';
+        }
+
+        document.getElementById('lang-btn').addEventListener('click', function() {
+            document.getElementById('lang-menu').classList.toggle('show');
+        });
+
+        // Animation au scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observer les éléments à animer
+        document.querySelectorAll('.methodology-step, .principle-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
